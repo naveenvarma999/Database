@@ -14,6 +14,7 @@ CREATE TABLE properties (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+
 INSERT INTO properties 
 (title, description, price, city, address, bedrooms, bathrooms, area_sqft, property_type, status, is_featured)
 VALUES
@@ -23,7 +24,6 @@ VALUES
 
 ('Family House in Birmingham', 'Spacious family house with backyard.', 420000.00, 'Birmingham', 'Edgbaston, Birmingham', 4, 3, 2200, 'House', 'AVAILABLE', TRUE);
 
-SELECT * FROM properties;
 
 SELECT id, title, price, city, property_type, status
 FROM properties;
@@ -39,3 +39,4 @@ WHERE price < 500000;
 SELECT id, title, price, city
 FROM properties
 WHERE is_featured = TRUE;
+
